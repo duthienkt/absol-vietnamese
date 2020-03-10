@@ -1,0 +1,24 @@
+{
+  "name": "absol-vietnamese",
+  "version": "0.0.1",
+  "description": "Process Vietnamese string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duthienkt/absol-vietnamese.git"
+  },
+  "keywords": [
+    "vietnamese",
+    "string",
+    "word"
+  ],
+  "author": "Pham Quoc Du Thien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duthienkt/absol-vietnamese/issues"
+  },
+  "homepage": "https://github.com/duthienkt/absol-vietnamese#readme"
+}
