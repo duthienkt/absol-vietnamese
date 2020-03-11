@@ -46,7 +46,7 @@ export default function tokenizeByWord(text, wordDict) {
         wordDict = wordDict.reduce(function (ac, cr) {
             ac[cr] = true;
             return ac;
-        });
+        }, {});
     }
     var tokens = tokenizeBySound(text);
     return breakWord(tokens, wordDict);
