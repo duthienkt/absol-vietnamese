@@ -13,7 +13,7 @@ function subWord(tokens, i, l) {
 }
 
 
-function breakWord(tokens) {
+function breakWord(tokens, wordDict) {
     var res = [];
     var lastText;
 
@@ -41,7 +41,13 @@ function breakWord(tokens) {
 }
 
 
-export default function tokenizeByWord(text) {
+export default function tokenizeByWord(text, wordDict) {
+    if (wordDict instanceof Array) {
+        wordDict = wordDict.reduce(function (ac, cr) {
+            ac[cr] = true;
+            return ac;
+        });
+    }
     var tokens = tokenizeBySound(text);
-    return breakWord(tokens);
+    return breakWord(tokens, wordDict);
 }
