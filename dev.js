@@ -1,6 +1,7 @@
 import CommonWords from "./CommonWords";
 import UncommonWords from "./UncommonWords";
 import RareWords from "./RareWords";
+import tokenizeByWord from "./tokenizeByWord";
 
 var allWordDict = CommonWords.concat(UncommonWords).concat(RareWords).reduce(function (ac, cr) {
     ac[cr] = true;
